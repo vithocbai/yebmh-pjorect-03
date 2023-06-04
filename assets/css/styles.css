@@ -30,19 +30,32 @@ a {
 .btn {
     display: inline-block;
     min-width: 205px;
-    padding: 22px 16px;
+    padding: 15px 16px;
     background: var(--primary-color);
     border-radius: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
 }
 
 .btn:hover {
     opacity: 0.9;
 }
+
+.heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
 /* === Header === */
 .header {
     min-height: 100vh;
     background: var(--header-color);
-    padding-top: 30px;
+    padding: 30px 0 110px;
 }
 
 .header-top {
@@ -132,18 +145,18 @@ a {
     background: #ffffff;
 }
 
-.actions {
+.header-actions {
     display: flex;
     align-items: center;
 }
 
-.action__login {
+.header-action__login {
     font-weight: 300;
     font-size: 1.6rem;
     color: #c9d2da;
 }
 
-.action__signup {
+.header-action__signup {
     margin-left: 28px;
     min-width: 104px;
     padding: 8px 16px;
@@ -152,4 +165,70 @@ a {
     line-height: 1.75;
     text-align: center;
     color: #ffffff;
+}
+
+/* === Hero ===*/
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__desc {
+    width: 468px;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 38px;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 0px 6px 6px 0px;
 }
