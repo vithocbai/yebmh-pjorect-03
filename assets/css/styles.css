@@ -333,3 +333,69 @@ a {
 .service__btn {
     margin-top: 55px;
 }
+
+/* === Works ===*/
+.works {
+    margin-top: 120px;
+    padding: 100px 0;
+    background: #f7fbff;
+}
+
+.works__desc {
+    margin-top: 18px;
+    width: 468px;
+}
+
+.works__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 19px;
+    margin-top: 70px;
+}
+
+.works-item {
+    width: 370px;
+    background: #eaf6ff;
+    border-radius: 4px;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.works-item:hover {
+    transform: translateY(-16px);
+    border-color: #2e80ce;
+}
+.works-item__body {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 43px 42px;
+}
+
+.works-item__heading {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.38;
+    color: #10375c;
+}
+
+.works-item__desc {
+    margin-top: 28px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
+}
+
+.works-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #2e80ce;
+}
+
+.works-item__more:hover {
+    font-weight: 400;
+}
