@@ -470,10 +470,15 @@ a {
     column-gap: 30px;
 }
 
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+
 .member-item__img-bg {
     padding-top: 28px;
     background: #eaf6ff;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 .member-item__thumb {
@@ -481,6 +486,7 @@ a {
     height: 290px;
     max-width: 100%;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .member-item__name {
@@ -524,4 +530,50 @@ a {
     background: #2e80ce;
     color: #fff;
     cursor: pointer;
+    border: none;
+}
+
+/* === App === */
+.app {
+    margin-top: 180px;
+}
+
+.app__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e80ce;
+    padding: 0 70px;
+    border-radius: 4px;
+}
+
+.app__img {
+    margin-top: -95px;
+    display: block;
+}
+
+.app__content {
+    max-width: 586px;
+}
+
+.app__desc,
+.app__heading {
+    color: #fff;
+}
+
+.app__heading {
+    max-width: 489px;
+    font-size: 5rem;
+}
+
+.app__desc {
+    max-width: 586px;
+}
+
+.app__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
